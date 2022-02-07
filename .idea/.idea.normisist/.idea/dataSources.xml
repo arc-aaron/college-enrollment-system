@@ -5,7 +5,7 @@
       <driver-ref>sqlserver.localdb.jtds</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:jtds:sqlserver://./enrolment1</jdbc-url>
+      <jdbc-url>jdbc:jtds:sqlserver://./Enrollment</jdbc-url>
       <jdbc-additional-properties>
         <property name="LOCAL_DB_INSTANCE" value="MSSQLLocalDB" />
       </jdbc-additional-properties>
