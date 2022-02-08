@@ -9,5 +9,5 @@ public class Student
 
     public string? EmailAddress { get; set; }
 
-    public ICollection<Enrollment> Enrollments { get; set; }
+    public ICollection<Enrollment>? Enrollments { get; set; }
 }
