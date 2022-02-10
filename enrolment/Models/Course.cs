@@ -17,7 +17,7 @@ public class Course
 
     public int DepartmentID { get; set; }
 
-    public Department Department { get; set; }
-    public ICollection<Enrollment> Enrollments { get; set; }
-    public ICollection<CourseAssignment> CourseAssignments { get; set; }
+    public Department? Department { get; set; }
+    public ICollection<Enrollment>? Enrollments { get; set; }
+    public ICollection<CourseAssignment>? CourseAssignments { get; set; }
 }

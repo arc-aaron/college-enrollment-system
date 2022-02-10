@@ -26,6 +26,11 @@ public class Instructor
     [Display(Name = "Full Name")]
     public string FullName => LastName + ", " + FirstMidName;
 
-    public ICollection<CourseAssignment> CourseAssignments { get; set; }
+    private ICollection<CourseAssignment> _courseAssignments;
+    public ICollection<CourseAssignment> CourseAssignments
+    {
+        get => _courseAssignments ??= new List<CourseAssignment>();
+        set => _courseAssignments = value;
+    }
     public OfficeAssignment OfficeAssignment { get; set; }
 }
