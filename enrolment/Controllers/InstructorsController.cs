@@ -89,7 +89,7 @@ namespace enrolment.Controllers
             return View();
         }
 
-// POST: Instructors/Create
+        // POST: Instructors/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("FirstMidName,HireDate,LastName,OfficeAssignment")] Instructor instructor, string[] selectedCourses)
@@ -104,7 +104,7 @@ namespace enrolment.Controllers
                 }
             }
 
-            var key = $"{nameof(OfficeAssignment)}.{nameof(OfficeAssignment.Instructor)}";
+            const string key = $"{nameof(OfficeAssignment)}.{nameof(OfficeAssignment.Instructor)}";
             if (ModelState.GetValidationState(key) == ModelValidationState.Invalid)
             {
                 ModelState.Remove(key);
